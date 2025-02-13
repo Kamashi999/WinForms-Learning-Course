@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35806.99 d17.13
+VisualStudioVersion = 17.13.35806.99
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms Learning Course", "WinForms Learning Course\WinForms Learning Course.csproj", "{CFC29AB7-1B0C-441A-9A9F-C81988493932}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms - Introduction", "WinForms - Introduction\WinForms - Introduction.csproj", "{8099E41F-7B73-4154-A276-C48118740445}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{CFC29AB7-1B0C-441A-9A9F-C81988493932}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFC29AB7-1B0C-441A-9A9F-C81988493932}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFC29AB7-1B0C-441A-9A9F-C81988493932}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8099E41F-7B73-4154-A276-C48118740445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8099E41F-7B73-4154-A276-C48118740445}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8099E41F-7B73-4154-A276-C48118740445}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8099E41F-7B73-4154-A276-C48118740445}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
