@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using IronBarCode;
 
 namespace WinForms___Introduction
 {
@@ -17,6 +18,7 @@ namespace WinForms___Introduction
         public Form1()
         {
             InitializeComponent();
+            QRCodeWriter.CreateQrCode("https://google.com/", 500, QRCodeWriter.QrErrorCorrectionLevel.Medium).SaveAsPng("MyQR.png");
         }
 
         private void button1_Click(object sender, EventArgs e)
