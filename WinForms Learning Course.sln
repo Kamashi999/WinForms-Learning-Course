@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms - Introduction", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms - Program #1 QR Code Generator", "WinForms - Program #1 QR Code Generator\WinForms - Program #1 QR Code Generator.csproj", "{8C564863-79B6-493A-BE19-3CBF8AD1CDC8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms - Program #2 Calculator", "WinForms - Program #2 Calculator\WinForms - Program #2 Calculator.csproj", "{6C4FDC03-F421-4AAC-B031-2AAD4EDF38DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{8C564863-79B6-493A-BE19-3CBF8AD1CDC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C564863-79B6-493A-BE19-3CBF8AD1CDC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C564863-79B6-493A-BE19-3CBF8AD1CDC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C4FDC03-F421-4AAC-B031-2AAD4EDF38DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C4FDC03-F421-4AAC-B031-2AAD4EDF38DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C4FDC03-F421-4AAC-B031-2AAD4EDF38DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C4FDC03-F421-4AAC-B031-2AAD4EDF38DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

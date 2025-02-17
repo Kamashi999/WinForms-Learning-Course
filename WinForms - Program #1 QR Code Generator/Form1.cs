@@ -24,8 +24,8 @@ namespace WinForms___Program__1_QR_Code_Generator
         {
             string text = textBox1.Text;
             if (text.Length == 0) return;
-            string path = "MyQR" + num + ".png";
-            QRCodeWriter.CreateQrCode($"{text}", 250, QRCodeWriter.QrErrorCorrectionLevel.Medium).SaveAsPng(path);
+            string path = $"QR_Images/MyQR{num}.png";
+            QRCodeWriter.CreateQrCode($"{text}", 500, QRCodeWriter.QrErrorCorrectionLevel.Medium).SaveAsPng(path);
             pictureBox1.Image = Image.FromFile(path);
             num++;
         }

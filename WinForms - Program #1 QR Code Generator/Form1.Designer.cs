@@ -36,7 +36,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(293, 117);
+            this.button1.Location = new System.Drawing.Point(331, 67);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(134, 43);
             this.button1.TabIndex = 0;
@@ -46,16 +46,17 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(171, 135);
+            this.textBox1.Location = new System.Drawing.Point(331, 41);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(116, 20);
+            this.textBox1.Size = new System.Drawing.Size(134, 20);
             this.textBox1.TabIndex = 1;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(187, 186);
+            this.pictureBox1.Location = new System.Drawing.Point(275, 116);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(250, 250);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
