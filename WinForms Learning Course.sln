@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms - Program #1 QR Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms - Program #2 Calculator", "WinForms - Program #2 Calculator\WinForms - Program #2 Calculator.csproj", "{6C4FDC03-F421-4AAC-B031-2AAD4EDF38DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms - Toolbox", "WinForms - Toolbox\WinForms - Toolbox.csproj", "{9DC86DAB-B02B-48B9-9EE5-C654C8E4B9CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{6C4FDC03-F421-4AAC-B031-2AAD4EDF38DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C4FDC03-F421-4AAC-B031-2AAD4EDF38DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C4FDC03-F421-4AAC-B031-2AAD4EDF38DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DC86DAB-B02B-48B9-9EE5-C654C8E4B9CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DC86DAB-B02B-48B9-9EE5-C654C8E4B9CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DC86DAB-B02B-48B9-9EE5-C654C8E4B9CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DC86DAB-B02B-48B9-9EE5-C654C8E4B9CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
