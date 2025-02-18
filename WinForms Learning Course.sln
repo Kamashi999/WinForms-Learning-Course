@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms - Program #2 Calcu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms - Toolbox", "WinForms - Toolbox\WinForms - Toolbox.csproj", "{9DC86DAB-B02B-48B9-9EE5-C654C8E4B9CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms - Events", "WinForms - Events\WinForms - Events.csproj", "{2A3A6744-B322-4B26-B329-DBE1A435939E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{9DC86DAB-B02B-48B9-9EE5-C654C8E4B9CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DC86DAB-B02B-48B9-9EE5-C654C8E4B9CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DC86DAB-B02B-48B9-9EE5-C654C8E4B9CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A3A6744-B322-4B26-B329-DBE1A435939E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A3A6744-B322-4B26-B329-DBE1A435939E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A3A6744-B322-4B26-B329-DBE1A435939E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A3A6744-B322-4B26-B329-DBE1A435939E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
