@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms - Sandbox #1", "Wi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms - Program #3 Paint", "WinForms - Program #3 Paint\WinForms - Program #3 Paint.csproj", "{2F29E3AB-C8F6-4B4B-B372-6EA3845D7CFF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms - User Gui", "WinForms - User Gui\WinForms - User Gui.csproj", "{7D12D691-628C-48DE-8993-049F4A87318E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{2F29E3AB-C8F6-4B4B-B372-6EA3845D7CFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F29E3AB-C8F6-4B4B-B372-6EA3845D7CFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F29E3AB-C8F6-4B4B-B372-6EA3845D7CFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D12D691-628C-48DE-8993-049F4A87318E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D12D691-628C-48DE-8993-049F4A87318E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D12D691-628C-48DE-8993-049F4A87318E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D12D691-628C-48DE-8993-049F4A87318E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
