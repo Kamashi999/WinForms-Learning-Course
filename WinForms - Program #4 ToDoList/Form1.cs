@@ -13,7 +13,7 @@ namespace WinForms___Program__4_ToDoList
 {
     public partial class Form1: Form
     {
-        private bool isDarkTheme = true;
+        private bool isDarkTheme = false;
         void ToggleTheme()
         {
             if (isDarkTheme)
