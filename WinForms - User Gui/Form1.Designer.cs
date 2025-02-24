@@ -33,9 +33,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.services1 = new WinForms___User_Gui.services();
-            this.contact1 = new WinForms___User_Gui.contact();
             this.home1 = new WinForms___User_Gui.home();
+            this.contact1 = new WinForms___User_Gui.contact();
+            this.services1 = new WinForms___User_Gui.services();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -62,7 +62,6 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Home";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.menuBtn_Click);
             // 
             // button2
             // 
@@ -73,7 +72,6 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Services";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.menuBtn_Click);
             // 
             // button3
             // 
@@ -84,7 +82,6 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Contact";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.menuBtn_Click);
             // 
             // panel1
             // 
@@ -97,13 +94,12 @@
             this.panel1.Size = new System.Drawing.Size(600, 450);
             this.panel1.TabIndex = 1;
             // 
-            // services1
+            // home1
             // 
-            this.services1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.services1.Location = new System.Drawing.Point(0, 0);
-            this.services1.Name = "services1";
-            this.services1.Size = new System.Drawing.Size(600, 450);
-            this.services1.TabIndex = 2;
+            this.home1.Location = new System.Drawing.Point(0, 0);
+            this.home1.Name = "home1";
+            this.home1.Size = new System.Drawing.Size(600, 450);
+            this.home1.TabIndex = 0;
             // 
             // contact1
             // 
@@ -113,12 +109,13 @@
             this.contact1.Size = new System.Drawing.Size(600, 450);
             this.contact1.TabIndex = 1;
             // 
-            // home1
+            // services1
             // 
-            this.home1.Location = new System.Drawing.Point(0, 0);
-            this.home1.Name = "home1";
-            this.home1.Size = new System.Drawing.Size(600, 450);
-            this.home1.TabIndex = 0;
+            this.services1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.services1.Location = new System.Drawing.Point(0, 0);
+            this.services1.Name = "services1";
+            this.services1.Size = new System.Drawing.Size(600, 450);
+            this.services1.TabIndex = 2;
             // 
             // Form1
             // 
