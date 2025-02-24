@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms - Program #3 Paint
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms - User Gui", "WinForms - User Gui\WinForms - User Gui.csproj", "{7D12D691-628C-48DE-8993-049F4A87318E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms - Program #4 Notepad", "WinForms - Program #4 Notepad\WinForms - Program #4 Notepad.csproj", "{89826116-03F7-4160-A232-5953F3402B4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{7D12D691-628C-48DE-8993-049F4A87318E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D12D691-628C-48DE-8993-049F4A87318E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D12D691-628C-48DE-8993-049F4A87318E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89826116-03F7-4160-A232-5953F3402B4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89826116-03F7-4160-A232-5953F3402B4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89826116-03F7-4160-A232-5953F3402B4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89826116-03F7-4160-A232-5953F3402B4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
