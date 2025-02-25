@@ -12,18 +12,24 @@ namespace WinForms___Program__5_Calculator_V2._0
 {
     public partial class Form1: Form
     {
+        string numA;
+        string numB;
         bool selectingNumber;
+        bool addition = false;
+        bool subtraction = false;
+
+
         void ToggleToAnotherNumber()
         {
             selectingNumber = !selectingNumber;
+        }
 
-            if (selectingNumber == true)
-            {
-                SelectNumberA();
-            } else
-            {
-                SelectNumberB();
-            }
+        void Addition()
+        {
+            int numericA = int.Parse(numA);
+            int numericB = int.Parse(numB);
+            int result = numericA + numericB;
+            label1.Text = result.ToString();
         }
         void ClearAllLabels()
         {
@@ -40,18 +46,19 @@ namespace WinForms___Program__5_Calculator_V2._0
             Button btn = sender as Button;
             string btnNumberText = btn.Name.Substring(btn.Name.Length - 1);
             int btnNumber = int.Parse(btnNumberText);
-            label2.Text += btnNumberText;
-        }
-        void SelectNumberA()
-        {
 
-            label1.Text += "numA";
+            if (selectingNumber)
+            {
+                numA += btnNumberText;
+                label2.Text = numA;
+            }
+            else
+            {
+                numB += btnNumberText;
+                label3.Text = numB;
+            }
+        }
 
-        }
-        void SelectNumberB()
-        {
-            label1.Text = "numB";
-        }
         public Form1()
         {
             InitializeComponent();
@@ -67,7 +74,7 @@ namespace WinForms___Program__5_Calculator_V2._0
         private void ButtonNumber(object sender, EventArgs e)
         {
             ButtonNumber(sender);
-            SelectNumberA();
+            
 
         }
 
@@ -77,5 +84,9 @@ namespace WinForms___Program__5_Calculator_V2._0
 
         }
 
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Addition();
+        }
     }
 }
