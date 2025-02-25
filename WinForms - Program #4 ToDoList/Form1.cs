@@ -11,6 +11,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WinForms___Program__4_ToDoList
 {
+
     public partial class Form1: Form
     {
         private bool isDarkTheme = false;
@@ -77,14 +78,21 @@ namespace WinForms___Program__4_ToDoList
         }
 
         private void button2_Click(object sender, EventArgs e)
+
         {
-            if (!string.IsNullOrWhiteSpace(textBox1.Text))
+            bool IsValidIndex(int indexBool)
             {
-                checkedListBox1.Items.RemoveAt(int.Parse(textBox1.Text) - 1);
+                return indexBool >= 0 && indexBool < checkedListBox1.Items.Count;
+            }
+
+            if (int.TryParse(textBox1.Text, out int index) && IsValidIndex(index - 1))
+            {
+                
+                checkedListBox1.Items.RemoveAt(index - 1);
                 textBox1.Clear();
             } else
             {
-                MessageBox.Show("Pole nie może być puste!", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Niepoprawny indeks!", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -97,6 +105,8 @@ namespace WinForms___Program__4_ToDoList
         {
             ToggleTheme();
         }
+
+
     }
 }
 
