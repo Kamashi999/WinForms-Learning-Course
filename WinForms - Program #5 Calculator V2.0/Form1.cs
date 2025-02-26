@@ -14,16 +14,19 @@ namespace WinForms___Program__5_Calculator_V2._0
     {
         string numA;
         string numB;
-        bool selectingNumber;
+        bool selectingNumber = true;
         bool addition = false;
         bool subtraction = false;
 
+        
         void Reset()
         {
             numA = "";
             numB = "";
             ClearAllLabels();
-            selectingNumber = false;
+            selectingNumber = true;
+            label4.Text = "Number A";
+            label5.Text = "Number B";
         }
 
         void ToggleToAnotherNumber()
@@ -78,6 +81,8 @@ namespace WinForms___Program__5_Calculator_V2._0
         {
             InitializeComponent();
             ClearAllLabels();
+            label4.Text = "Number A";
+            label5.Text = "Number B";
         }
 
         private void button1_Click(object sender, EventArgs e)
