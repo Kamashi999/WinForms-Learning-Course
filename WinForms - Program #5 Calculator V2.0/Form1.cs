@@ -18,6 +18,13 @@ namespace WinForms___Program__5_Calculator_V2._0
         bool addition = false;
         bool subtraction = false;
 
+        void Reset()
+        {
+            numA = "";
+            numB = "";
+            ClearAllLabels();
+            selectingNumber = false;
+        }
 
         void ToggleToAnotherNumber()
         {
@@ -29,6 +36,14 @@ namespace WinForms___Program__5_Calculator_V2._0
             int numericA = int.Parse(numA);
             int numericB = int.Parse(numB);
             int result = numericA + numericB;
+            label1.Text = result.ToString();
+        }
+
+        void Substraction()
+        {
+            int numericA = int.Parse(numA);
+            int numericB = int.Parse(numB);
+            int result = numericA - numericB;
             label1.Text = result.ToString();
         }
         void ClearAllLabels()
@@ -81,12 +96,32 @@ namespace WinForms___Program__5_Calculator_V2._0
         private void TogglingNumber(object sender, EventArgs e)
         {
             ToggleToAnotherNumber();
+            addition = true;
+        }
 
+        private void Substraction(object sender, EventArgs e)
+        {
+            ToggleToAnotherNumber();
+            subtraction = true;
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            Addition();
+            if (addition == true)
+            {
+                Addition();
+                addition = false;
+            }
+            else if (subtraction == true)
+            {
+                Substraction();
+                subtraction = false;
+            }
+        }
+
+        private void Restart(object sender, EventArgs e)
+        {
+            Reset();
         }
     }
 }
