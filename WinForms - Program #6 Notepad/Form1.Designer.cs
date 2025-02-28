@@ -60,6 +60,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Load your last file!";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.LoadFile);
             // 
             // button3
             // 
