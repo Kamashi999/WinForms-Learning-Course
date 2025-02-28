@@ -21,11 +21,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms - Program #3 Paint
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms - User Gui", "WinForms - User Gui\WinForms - User Gui.csproj", "{7D12D691-628C-48DE-8993-049F4A87318E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms - Program #4 Notepad", "WinForms - Program #4 Notepad\WinForms - Program #4 Notepad.csproj", "{89826116-03F7-4160-A232-5953F3402B4C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms - Program #4 ToDoList", "WinForms - Program #4 ToDoList\WinForms - Program #4 ToDoList.csproj", "{24999F29-546F-42CA-9B60-5A3CBF19E0D4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms - Program #5 Calculator V2.0", "WinForms - Program #5 Calculator V2.0\WinForms - Program #5 Calculator V2.0.csproj", "{C26066C0-8D91-4982-A009-28ACE9B33222}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms - Program #6 Notepad", "WinForms - Program #6 Notepad\WinForms - Program #6 Notepad.csproj", "{BACA7893-C5A0-4A2E-910E-B4853C9AF628}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,10 +69,6 @@ Global
 		{7D12D691-628C-48DE-8993-049F4A87318E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D12D691-628C-48DE-8993-049F4A87318E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D12D691-628C-48DE-8993-049F4A87318E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{89826116-03F7-4160-A232-5953F3402B4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{89826116-03F7-4160-A232-5953F3402B4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{89826116-03F7-4160-A232-5953F3402B4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{89826116-03F7-4160-A232-5953F3402B4C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{24999F29-546F-42CA-9B60-5A3CBF19E0D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{24999F29-546F-42CA-9B60-5A3CBF19E0D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24999F29-546F-42CA-9B60-5A3CBF19E0D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -81,6 +77,10 @@ Global
 		{C26066C0-8D91-4982-A009-28ACE9B33222}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C26066C0-8D91-4982-A009-28ACE9B33222}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C26066C0-8D91-4982-A009-28ACE9B33222}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BACA7893-C5A0-4A2E-910E-B4853C9AF628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BACA7893-C5A0-4A2E-910E-B4853C9AF628}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BACA7893-C5A0-4A2E-910E-B4853C9AF628}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BACA7893-C5A0-4A2E-910E-B4853C9AF628}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
