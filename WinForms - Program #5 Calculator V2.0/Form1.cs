@@ -14,10 +14,12 @@ namespace WinForms___Program__5_Calculator_V2._0
     {
         string numA;
         string numB;
+        string tempResult;
         bool selectingNumber = true;
         bool addition = false;
         bool subtraction = false;
-
+        bool division = false;
+        bool multiplication = false;
         
         void Reset()
         {
@@ -42,13 +44,35 @@ namespace WinForms___Program__5_Calculator_V2._0
             label1.Text = result.ToString();
         }
 
-        void Substraction()
+        void Subtraction()
         {
             int numericA = int.Parse(numA);
             int numericB = int.Parse(numB);
             int result = numericA - numericB;
             label1.Text = result.ToString();
         }
+        void Division()
+        {
+            int numericA = int.Parse(numA);
+            int numericB = int.Parse(numB);
+            if (numericA == 0 || numericB == 0)
+            {
+                label1.Text = "You can't devide by 0!";
+            }
+            else
+            {
+                int result = numericA / numericB;
+                label1.Text = result.ToString();
+            }
+        }
+        void Multiplication()
+        {
+            int numericA = int.Parse(numA);
+            int numericB = int.Parse(numB);
+            int result = numericA * numericB;
+            label1.Text = result.ToString();
+        }
+
         void ClearAllLabels()
         {
             foreach (Control L in Controls)
@@ -84,18 +108,9 @@ namespace WinForms___Program__5_Calculator_V2._0
             label4.Text = "Number A";
             label5.Text = "Number B";
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            ButtonNumber(sender);
-
-        }
-
         private void ButtonNumber(object sender, EventArgs e)
         {
             ButtonNumber(sender);
-            
-
         }
 
         private void TogglingNumber(object sender, EventArgs e)
@@ -104,13 +119,24 @@ namespace WinForms___Program__5_Calculator_V2._0
             addition = true;
         }
 
-        private void Substraction(object sender, EventArgs e)
+        private void Subtraction(object sender, EventArgs e)
         {
             ToggleToAnotherNumber();
             subtraction = true;
         }
 
-        private void button11_Click(object sender, EventArgs e)
+        private void Division(object sender, EventArgs e)
+        {
+            ToggleToAnotherNumber();
+            division = true;
+        }
+        private void Multiplication(object sender, EventArgs e)
+        {
+            ToggleToAnotherNumber();
+            multiplication = true;
+        }
+
+        private void EqualsBtn(object sender, EventArgs e)
         {
             if (addition == true)
             {
@@ -119,9 +145,20 @@ namespace WinForms___Program__5_Calculator_V2._0
             }
             else if (subtraction == true)
             {
-                Substraction();
+                Subtraction();
                 subtraction = false;
+            } else if (division == true)
+            {
+                Division();
+                division = false;
+            } else if (multiplication == true)
+            {
+                Multiplication();
+                multiplication = false;
             }
+            tempResult = label1.Text;
+            Reset();
+            label1.Text = tempResult;
         }
 
         private void Restart(object sender, EventArgs e)
