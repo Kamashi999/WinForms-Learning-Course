@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace WinForms___Program__5_Calculator_V2._0
 {
@@ -20,7 +21,15 @@ namespace WinForms___Program__5_Calculator_V2._0
         bool subtraction = false;
         bool division = false;
         bool multiplication = false;
-        
+
+        public Form1()
+        {
+            InitializeComponent();
+            ClearAllLabels();
+            label4.Text = "Number A";
+            label5.Text = "Number B";
+        }
+
         void Reset()
         {
             numA = "";
@@ -101,13 +110,7 @@ namespace WinForms___Program__5_Calculator_V2._0
             }
         }
 
-        public Form1()
-        {
-            InitializeComponent();
-            ClearAllLabels();
-            label4.Text = "Number A";
-            label5.Text = "Number B";
-        }
+        
         private void ButtonNumber(object sender, EventArgs e)
         {
             ButtonNumber(sender);
