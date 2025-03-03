@@ -13,8 +13,8 @@ namespace WinForms___Program__5_Calculator_V2._0
 {
     public partial class Form1: Form
     {
-        string numA;
-        string numB;
+        List<string> numbersA; // label2
+        List<string> numbersB; // label3
         string tempResult;
         bool selectingNumber = true;
         bool addition = false;
@@ -28,12 +28,22 @@ namespace WinForms___Program__5_Calculator_V2._0
             ClearAllLabels();
             label4.Text = "Number A";
             label5.Text = "Number B";
+            numbersA = new List<string>();
+            numbersA.Add("0");
+            label2.Text = numbersA[0];
+            numbersB = new List<string>();
+            numbersB.Add("0");
+            label3.Text = numbersB[0];
         }
 
         void Reset()
         {
-            numA = "";
-            numB = "";
+            numbersA.Clear();
+            numbersA.Add("0");
+            label2.Text = numbersA[0];
+            numbersB.Clear();
+            numbersB.Add("0");
+            label3.Text = numbersB[0];
             ClearAllLabels();
             selectingNumber = true;
             label4.Text = "Number A";
@@ -47,23 +57,23 @@ namespace WinForms___Program__5_Calculator_V2._0
 
         void Addition()
         {
-            int numericA = int.Parse(numA);
-            int numericB = int.Parse(numB);
+            int numericA = int.Parse(label2.Text);
+            int numericB = int.Parse(label3.Text);
             int result = numericA + numericB;
             label1.Text = result.ToString();
         }
 
         void Subtraction()
         {
-            int numericA = int.Parse(numA);
-            int numericB = int.Parse(numB);
+            int numericA = int.Parse(label2.Text);
+            int numericB = int.Parse(label3.Text);
             int result = numericA - numericB;
             label1.Text = result.ToString();
         }
         void Division()
         {
-            int numericA = int.Parse(numA);
-            int numericB = int.Parse(numB);
+            int numericA = int.Parse(label2.Text);
+            int numericB = int.Parse(label3.Text);
             if (numericA == 0 || numericB == 0)
             {
                 label1.Text = "You can't devide by 0!";
@@ -76,8 +86,8 @@ namespace WinForms___Program__5_Calculator_V2._0
         }
         void Multiplication()
         {
-            int numericA = int.Parse(numA);
-            int numericB = int.Parse(numB);
+            int numericA = int.Parse(label2.Text);
+            int numericB = int.Parse(label3.Text);
             int result = numericA * numericB;
             label1.Text = result.ToString();
         }
@@ -100,13 +110,21 @@ namespace WinForms___Program__5_Calculator_V2._0
 
             if (selectingNumber)
             {
-                numA += btnNumberText;
-                label2.Text = numA;
+                if (numbersA[0] == "0")
+                {
+                    numbersA.RemoveAt(0);
+                }
+                numbersA.Add(btnNumberText);
+                label2.Text = string.Join("", numbersA);
             }
             else
             {
-                numB += btnNumberText;
-                label3.Text = numB;
+                if (numbersB[0] == "0")
+                {
+                    numbersB.RemoveAt(0);
+                }
+                numbersB.Add(btnNumberText);
+                label3.Text = string.Join("", numbersB);
             }
         }
 
