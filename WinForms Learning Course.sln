@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms - Program #5 Calcu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms - Program #6 Notepad", "WinForms - Program #6 Notepad\WinForms - Program #6 Notepad.csproj", "{BACA7893-C5A0-4A2E-910E-B4853C9AF628}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms - Program #7 Random Math Task", "WinForms - Program #7 Random Math Task\WinForms - Program #7 Random Math Task.csproj", "{86627BB9-A1B5-468C-93E6-CFE8EC021AA0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{BACA7893-C5A0-4A2E-910E-B4853C9AF628}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BACA7893-C5A0-4A2E-910E-B4853C9AF628}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BACA7893-C5A0-4A2E-910E-B4853C9AF628}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86627BB9-A1B5-468C-93E6-CFE8EC021AA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86627BB9-A1B5-468C-93E6-CFE8EC021AA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86627BB9-A1B5-468C-93E6-CFE8EC021AA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86627BB9-A1B5-468C-93E6-CFE8EC021AA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
