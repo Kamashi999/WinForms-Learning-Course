@@ -18,24 +18,52 @@ namespace WinForms___Program__7_Random_Math_Task
         int randTask;
         int result;
         int answer;
+        string calculation;
         public Form1()
         {
             InitializeComponent();
-            a = rand.Next(0,10);
-            b = rand.Next(0,10);
+            CreateCalculation();
+            DisplayCalculation();
+        }
+
+        void CreateCalculation()
+        {
+            a = rand.Next(0, 10);
+            b = rand.Next(0, 10);
             randTask = rand.Next(1, 3);
             switch (randTask)
             {
                 case 1:
-                    label1.Text = a.ToString() + "+" + b.ToString();
+                    calculation = a.ToString() + "+" + b.ToString();
                     answer = a + b;
                     break;
                 case 2:
-                    label1.Text = a.ToString() + "-" + b.ToString();
+                    calculation = a.ToString() + "-" + b.ToString();
                     answer = a - b;
                     break;
             }
-            label2.Text = answer.ToString();
+        }
+
+        void DisplayCalculation()
+        {
+            label1.Text = calculation;
+        }
+
+        void CheckResults()
+        {
+            if (textBox1.Text == answer.ToString())
+            {
+                CreateCalculation();
+                DisplayCalculation();
+            } else
+            {
+                button1.ForeColor = Color.Red;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CheckResults();
         }
     }
 }
