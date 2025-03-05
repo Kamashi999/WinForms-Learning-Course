@@ -16,7 +16,6 @@ namespace WinForms___Program__7_Random_Math_Task
         int a;
         int b;
         int randTask;
-        int result;
         int answer;
         string calculation;
         public Form1()
@@ -30,7 +29,7 @@ namespace WinForms___Program__7_Random_Math_Task
         {
             a = rand.Next(0, 10);
             b = rand.Next(0, 10);
-            randTask = rand.Next(1, 3);
+            randTask = rand.Next(1, 4);
             switch (randTask)
             {
                 case 1:
@@ -40,6 +39,10 @@ namespace WinForms___Program__7_Random_Math_Task
                 case 2:
                     calculation = a.ToString() + "-" + b.ToString();
                     answer = a - b;
+                    break;
+                case 3:
+                    calculation = a.ToString() + "x" + b.ToString();
+                    answer = a * b;
                     break;
             }
         }
