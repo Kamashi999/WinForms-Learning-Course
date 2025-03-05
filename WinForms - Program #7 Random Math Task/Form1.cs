@@ -55,15 +55,30 @@ namespace WinForms___Program__7_Random_Math_Task
             {
                 CreateCalculation();
                 DisplayCalculation();
+                textBox1.Text = "";
+                button1.ForeColor = default;
             } else
             {
                 button1.ForeColor = Color.Red;
+                textBox1.Text = "";
             }
+            button2.Visible = true;
+        }
+
+        void CheckAnswer()
+        {
+            label2.Text = answer.ToString();
+            button2.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             CheckResults();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CheckAnswer();
         }
     }
 }
