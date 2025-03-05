@@ -70,8 +70,18 @@ namespace WinForms___Program__7_Random_Math_Task
 
         void CheckAnswer()
         {
-            label2.Text = answer.ToString();
-            button2.Visible = false;
+            if(counter >= 2)
+            {
+                counter -= 2;
+                label2.Text = answer.ToString();
+                button2.Visible = false;
+                DisplayCounter();
+            }
+            else
+            {
+                MessageBox.Show("You don't have enough points to show the answer!");
+            }
+
         }
 
         void AddCounter()
