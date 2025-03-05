@@ -13,16 +13,14 @@ namespace WinForms___Program__7_Random_Math_Task
     public partial class Form1: Form
     {
         Random rand = new Random();
-        int a;
-        int b;
-        int randTask;
-        int answer;
+        int a, b, randTask, answer, counter;
         string calculation;
         public Form1()
         {
             InitializeComponent();
             CreateCalculation();
             DisplayCalculation();
+            DisplayCounter();
         }
 
         void CreateCalculation()
@@ -60,6 +58,8 @@ namespace WinForms___Program__7_Random_Math_Task
                 DisplayCalculation();
                 textBox1.Text = "";
                 button1.ForeColor = default;
+                AddCounter();
+                DisplayCounter();
             } else
             {
                 button1.ForeColor = Color.Red;
@@ -72,6 +72,16 @@ namespace WinForms___Program__7_Random_Math_Task
         {
             label2.Text = answer.ToString();
             button2.Visible = false;
+        }
+
+        void AddCounter()
+        {
+            counter++;
+        }
+
+        void DisplayCounter()
+        {
+            label3.Text = "Amount of Points: " + counter.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
