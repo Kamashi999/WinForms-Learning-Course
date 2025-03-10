@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace WinForms___Program__7_Random_Math_Task
 {
@@ -15,12 +16,14 @@ namespace WinForms___Program__7_Random_Math_Task
         Random rand = new Random();
         int a, b, randTask, answer, counter;
         string calculation;
+        SoundPlayer PointUp;
         public Form1()
         {
             InitializeComponent();
             CreateCalculation();
             DisplayCalculation();
             DisplayCounter();
+            PointUp = new SoundPlayer(@"PointUp.wav");
         }
 
         void CreateCalculation()
@@ -60,6 +63,7 @@ namespace WinForms___Program__7_Random_Math_Task
                 button1.ForeColor = default;
                 AddCounter();
                 DisplayCounter();
+                PointUp.Play();
             } else
             {
                 button1.ForeColor = Color.Red;

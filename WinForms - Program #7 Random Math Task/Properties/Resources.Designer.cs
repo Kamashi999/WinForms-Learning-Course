@@ -59,15 +59,5 @@ namespace WinForms___Program__7_Random_Math_Task.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] PointUp {
-            get {
-                object obj = ResourceManager.GetObject("PointUp", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
     }
 }
